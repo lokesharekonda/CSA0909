@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class DivideTwoNumbers {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Enter the dividend: ");
+        double dividend = scanner.nextDouble();
+        
+        System.out.print("Enter the divisor: ");
+        double divisor = scanner.nextDouble();
+        if (divisor != 0) {
+            double quotient = dividend / divisor;
+            System.out.println("The quotient of " + dividend + " divided by " + divisor + " is: " + quotient);
+        } else {
+            System.out.println("Error! Division by zero is not allowed.");
+        }
+        scanner.close();
+    }
+}
